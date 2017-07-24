@@ -17,10 +17,10 @@ Solution 2: using java
 
 Tech stack
 ------------
-JDK jdk1.8.0_131
-Junit 4
-Mockito core 2 +
-Gradle
+JDK jdk1.8.0_131,
+Junit 4,
+Mockito core 2 +,
+Gradle,
 Unused Spring for dependency injection to keep the implementation simple and light weight
 
 Run the Application
