@@ -1,0 +1,26 @@
+We have a table 
+	EVENTS(EventId number, EventName VARCHAR2(20), EventTime Timestamp). 
+The table contains a list of events which happened earlier. 
+An event could happened multiple times so the table will contain records like
+EventID     EventName   EventTime
+5           EventA      07/19/2017 23:00:00
+4           EventB      07/19/2017 23:00:00
+3           EventA      07/19/2017 21:00:00
+2           EventA      07/18/2017 21:00:00
+1           EventB      07/18/2017 21:00:00
+
+*EventID is randomly generated number and can not be used for ordering
+
+...
+Tasks
+1. write an SQL query to fetch a list of all unique events and latest Time when it happed 
+2. write a Java code to do the same + unit tests.
+	Don't need to write database read, can be a simple hardcoded population of java collection
+	Use mock object for unit test.
+
+
+So, the result will be 
+EventA 07/19/2017 23:00:00
+EventB 07/19/2017 23:00:00
+
+If you have any doubt/question and make any assumption, pl. list down the assumption.
